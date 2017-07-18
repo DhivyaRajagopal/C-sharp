@@ -4,31 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication3
+namespace ClassNDObjects
 {
     class Program
     {
-        static int arr_size; 
-        static int[] arr;
-
-        static void printArray(int[] ar)
+         static void method(int i,int j)
         {
-            int i;
-            arr_size= Convert.ToInt32(Console.ReadLine());
-           arr=new int[arr_size];
-            for (i = 0; i < arr_size; i++)
-            {
-                arr[i] = Convert.ToInt32(Console.ReadLine());
-            }
-            for (i = 0; i < arr_size; i++)
-            {
-                Console.WriteLine(arr[i]);
-            }
+            Console.WriteLine(i << j);
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the size of an array");
-            printArray(arr);
+            //Program p = new Program();
+            //p.method(10, 2);                      //use obj OR function call through static
+            method(10, 2);
             Console.ReadKey();
         }
     }
