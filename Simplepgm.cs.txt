@@ -1,0 +1,29 @@
+//if method having no return type as class name we can't use builder pattern.
+
+
+
+using System;
+
+public class Test
+{
+	int id1;
+	String name1;
+	double salary1;
+ 	public Test(int id1, string name1,double salary1)  
+   	{  
+    	this.id1 = id1;  
+        this.name1 = name1;
+        this.salary1 = salary1;
+       
+   	} 
+   public void display()
+    {
+    	Console.WriteLine("id : "+id1+" name : "+name1+" salary : "+salary1);
+        
+    }
+	public static void Main()
+	{
+	    Test t=new Test(01,"DHIVYA",15000.2);          
+	    t.display();
+	}
+}
