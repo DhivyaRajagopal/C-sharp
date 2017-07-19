@@ -1,0 +1,37 @@
+//Copy constructor example
+
+//purpose: initializing new instance to the value of existing instance
+
+
+
+using System;
+namespace CopyConstructor{
+	
+public class Test
+{
+	private string name;
+	private int age;
+	public Test(Test t){       //declare copy constructor
+		name=t.name;
+		age=t.age;
+	}
+	public Test(string name,int age){  Instance is created for that copy constructor
+		this.name=name;
+		this.age=age;
+	}
+	public string Collect         //get the details with string return type
+	{
+		get{
+			return "name:"+name+" "+"age"+age.ToString();
+		}
+	}
+	
+	public static void Main(String[] args){
+
+	    Test t1=new Test("DHIVYA",21);          
+	    Test t2=new Test(t1);
+	    Console.WriteLine(t2.Collect);
+	    Console.ReadLine();
+	}
+   }
+}
