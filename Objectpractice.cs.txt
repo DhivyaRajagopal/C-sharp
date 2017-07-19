@@ -1,0 +1,17 @@
+//if we declare an variable in object oriented(creating object) we should use the object to acces the variable
+
+using System;
+
+public class Test
+{
+	 int a;
+     public Test(){
+      a=10;
+     }
+	public static void Main(String[] args)
+	{
+	    Test t=new Test();          
+	    Console.WriteLine(t.a);
+	    Console.Read();
+	}
+}
